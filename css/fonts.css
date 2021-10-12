@@ -1,10 +1,20 @@
-.cases_text {
-    color: #2590c8;
+.play_text {
+    color:blue;
 }
 
-.deaths_text {
-    color: #d13141;
+.amateur_text{
+    color:#a6cee3;
 }
+
+.lord_text{
+    color:#b2df8a;
+}
+
+.king_text{
+    color:#fb9a99;
+}
+
+
 
 h1 {
     font-family: 'Cardo', serif;
@@ -12,7 +22,7 @@ h1 {
     font-size: xx-large;
 }
 
-h3 {
+h2 {
     font-family: 'Cardo', serif;
     font-size:larger;
 }

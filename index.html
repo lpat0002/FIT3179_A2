@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <script src="W10_vglite.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/layout2.css">
+
+    <title>Shakespeare Visualised</title>
+</head>
+<body>
+    
+    <div class="centre">
+    <h1>Shakespeare Visualised</h1>
+    </div>
+
+    <div class="centre"><h3>Settings of Shakespeare's Plays</h3></div>
+    <div class="row"> 
+        <div class="column_side">
+            <p>Shakespeare set his plays in many different locations, mainly throughout Europe and rarely in Africa.</p>
+            <p>Italy was a very popular location for writers during Shakespeare's time.
+            The Italian renaissance led to a boom in artistic exports such as poetry and short stories that became very popular in England.
+            Some believe that Shakespeare travelled to Italy at some point, although there is no evidence for this</p>
+            
+        </div>
+        <div class="column_middle">
+            <div id="chmap">
+            </div>
+            </div>
+        <div class="column_side">
+            <p>'The Tempest' is the only play not included here. It takes place on a fictional island possibly in the Caribbean.</p>
+            <p>'Antony and Cleopatra' takes place in 3 different countries and 3 different continents; Italy, Egypt and Syria.</p>
+            <p>It is unclear where 'As You Like It' takes place. Arden could refer to the Arden Forest in England, or the Ardennes region in France.</p> 
+        </div>
+    </div>
+
+    <div class="centre"><h3>Lengths of Shakepeare's Plays</h3></div>
+    <div class="row">
+    <div class="column_side">
+        <p>On average, every 1000 lines is 1 hour in performance.
+        For example, it would take about 2 hours to perform all 2165 lines of 'A Midsummer Night's Dream'
+        </p>    
+        <p>Longer plays, like 'Hamlet' and 'Richard III' could take 4 hours!
+            For this reason, these plays are often shortened by directors to about 2 hours.
+            It is unlikely that all 4024 lines of 'Hamlet' were performed even in Shakespeare's day.
+        </p>
+    </div>
+    <div class="column_middle">
+        <div id="barchart">    
+        </div>
+    </div>
+    <div class="column_side">
+        <p>Click the legend to highlight the selected genre.</p> 
+        <p>Tragedies tend to be longer and more intense, while comedies are usually shorter and lighter.</p>   
+    </div>
+    </div>
+
+    <div class="centre"><h3>Shakespeare's Play's Over Time</h3></div>
+    <div class="row">
+    <div class="column_side">
+        <p>Little is known about Shakespeare's early life.
+            He appears as a playwright and actor in the late 1580s.
+            The black plague stuck London in 1593, closing the city and its theatres for 14 months.
+            Shakespeare likely returned to his home in Stratform-upon-Avon during this time.
+        </p>
+        <p>In 1594 he co-founds the theatre company 'Lord Chamberlain's Men' and begins writing a lot more.
+            He also achieves great success, becoming one of the most popular playwrights of the time.
+        </p>    
+    </div>
+    <div class="column_middle">
+        <div id="scatterplot">    
+        </div>
+    </div>
+    <div class="column_side">
+            
+        <p>Queen Elizabeth I dies in 1603 and is replaced with King James I. 
+                Shakespeare's theatre company then becomes the 'King's Men' under the patronage of the new monarch.</p>
+        <p>Almost all of these datings are approximates.
+                The dates are based on personal diaries of those who may have seen his plays, publishing dates, official documents and artistic style.
+            </p> 
+        <p>These dates are contested to these days with each scholar having different opinions.</p>   
+    </div>
+    </div>
+    
+    <!--TO DO: highlight/recolour some text (like play titles), add images/other designs, actually upload to Git-->
+</div>
+</div>
+</body>
+</html>

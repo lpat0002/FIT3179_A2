@@ -1,0 +1,81 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "The population of the German city of Falkensee over time",
+    "width":550,
+    "height":250,
+    "data": {
+      "values": [
+        {
+          "start": "1589",
+          "end": "1593",
+          "event": "Amateur"
+        },
+        {
+          "start": "1594",
+          "end": "1602",
+          "event": "Lord Chamberlain's Men"
+        },
+        {
+            "start": "1603",
+            "end": "1614",
+            "event": "King's Men"
+        }
+      ],
+      "format": {
+        "parse": {"start": "date:'%Y'", "end": "date:'%Y'"}
+      }
+    },
+    "encoding": {
+      "x": {
+      "field": "start",
+      "timeUnit": "year"
+    },
+    "x2": {
+      "field": "end",
+      "timeUnit": "year"
+    }},
+    "layer": [
+      {
+        "mark": "rect",
+        "encoding": {
+          "color": {"field": "event", "type": "nominal", "legend": null,
+        "scale" :{
+          "domain": ["Amateur", "Lord Chamberlain's Men", "King's Men"],
+          "range": ["#a6cee3", "#b2df8a", "#fb9a99"]
+        }}
+        }
+      },
+      {
+        "mark": {"type": "point", "filled": false,"color": "#000000", "size": 60},
+        "data": {"url": "https://raw.githubusercontent.com/lpat0002/w9homework/main/A2%20Dataset%20-%20Play%20lengths.csv",
+        "format": {"parse": {"Year": "date:'%Y'"}}},
+        "encoding": {
+            "x": {"timeUnit": "year","field": "Year", "title": "Year"},
+            "y": {"field": "Lines", "type": "quantitative"},
+            
+          "shape":{ "field": "Genre", "type": "nominal",
+          "legend": {"title": "Genre", "orient": "bottom-right", "padding": 1,
+          "labelFontSize": 12, "titleFontSize":12}},
+          "tooltip": [
+            {"field": "Title", "type": "nominal", "title": "Play Title"},
+            {"field": "Lines", "type": "quantitative"},
+            {"field": "Genre", "type": "nominal"},
+            {"timeUnit": "year", "field": "Year","title": "Approx. Year Written"}
+         ]
+        }
+        }, {
+          "mark" : {
+            "type" :"text",
+            "align":"left",
+            "baseline":"middle",
+            "yOffset": 80,
+            "dx": 3,
+            "fontWeight":"bold",
+            "fontSize": 12
+          },
+          "encoding": {
+            "text": {"field": "event", "type": "nominal"}
+          }
+        }]
+  }
+  

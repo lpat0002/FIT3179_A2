@@ -1,0 +1,18 @@
+.row {
+    display: flex;
+ 
+  }
+  
+  .column {
+    display: flexbox;
+    flex-wrap: wrap;
+    
+  }
+
+  .pure-u-1-3 {
+    margin-top: 30px;
+    height: 30vw;
+  }
+  .centre {
+    text-align: center;
+  }

@@ -3,15 +3,18 @@
 }
 
 .amateur_text{
-    color:#a6cee3;
+    color:#1b9e77;
+    font-weight: bold;
 }
 
 .lord_text{
-    color:#b2df8a;
+    color:#d95f02;
+    font-weight: bold;
 }
 
 .king_text{
-    color:#fb9a99;
+    color:#7570b3;
+    font-weight: bold;
 }
 
 
@@ -28,5 +31,5 @@ h2 {
 }
 
 p {
-    font-family: 'Oswald', sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

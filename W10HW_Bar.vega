@@ -37,7 +37,7 @@
         "type": "nominal",
         "scale": {
           "domain": ["Comedy", "History",  "Romance", "Tragedy"],
-          "range": ["#a6cee3", "#b2df8a",  "#1f78b4", "#33a02c"]
+          "range": ["#e78ac3", "#e5c494",  "#ffd92f", "#e41a1c"]
         },
         "legend": {"title": "Genre", "orient": "bottom-right", "labelFontSize": 14, "titleFontSize":14}
       },

@@ -3,6 +3,10 @@ html,
   background-color:rgb(202, 174, 152);
 }
 
+hr {
+  color: blue;
+}
+
 .column_side {
     float: left;
     width: 23%;
